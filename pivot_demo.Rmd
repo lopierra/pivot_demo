@@ -10,6 +10,10 @@ output:
 
 > This tutorial is based on: https://swcarpentry.github.io/r-novice-gapminder/14-tidyr/
 
+### Background
+
+The most recent update of the {tidyr} package includes several new functions. Here I will introduce two of them, `pivot_longer()` and `pivot_wider()`, that improve on the original functions `gather()` and `spread()`. The older functions aren't going away, but all support and future updates will be based on the new functions, so we might as well get with the program now. 
+
 ### Getting started
 
 Load up the tidyverse:
@@ -193,4 +197,4 @@ The original Software Carpentries tutorial: https://swcarpentry.github.io/r-novi
 
 Great blog post demonstrating pivot_longer() and pivot_wider(): https://www.fromthebottomoftheheap.net/2019/10/25/pivoting-tidily/
 
-
+More about the other new functions in {tidyr}: https://www.tidyverse.org/blog/2019/09/tidyr-1-0-0/
