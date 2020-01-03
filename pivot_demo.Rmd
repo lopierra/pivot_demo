@@ -12,6 +12,8 @@ output:
 
 ### Background
 
+Adding a change
+
 The most recent update of the {tidyr} package includes several new functions. Here I will introduce two of them, `pivot_longer()` and `pivot_wider()`, that improve on the original functions `gather()` and `spread()`. The older functions aren't going away, but all support and future updates will be based on the new functions, so we might as well get with the program now. 
 
 ### Getting started
@@ -155,7 +157,7 @@ If you want to go a step further and pivot the dataframe all the way back to the
 
 ```{r}
 gap_wide2 <- gap_long %>% 
-  pivot_wider(names_from = c(obstype, year),
+  pivot_wider(names_from = c(obstype, year, country),
               values_from = value)
 
 gap_wide2
@@ -187,6 +189,10 @@ all_equal(gap_wide, test)
 ```{r}
 test2 <- gap_wide2 %>% select(-gdpPercap_1952)
 all_equal(gap_wide, test2)
+
+test3 <- gap_long
+test3$year <- as.character(test3$year)
+all_equal(gap_long, test3)
 ```
 
 ### Resources
