@@ -1,4 +1,4 @@
-# pivot_demo UPDATED TODAY
+# pivot_demo
 
 > This tutorial about the new {tidyr} pivoting verbs is based on: https://swcarpentry.github.io/r-novice-gapminder/14-tidyr/
 
