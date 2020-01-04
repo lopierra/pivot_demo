@@ -12,8 +12,6 @@ output:
 
 ### Background
 
-Adding a change
-
 The most recent update of the {tidyr} package includes several new functions. Here I will introduce two of them, `pivot_longer()` and `pivot_wider()`, that improve on the original functions `gather()` and `spread()`. The older functions aren't going away, but all support and future updates will be based on the new functions, so we might as well get with the program now. 
 
 ### Getting started
